@@ -10,13 +10,63 @@
 </head>
 <body>
     <header>
-
+        <h1>WebApp</h1>
+        <div>
+            <svg></svg>
+            <div></div>
+        </div>
+            <img src="" alt="">
+        <h3>Steve Martin</h3>
     </header>
-    <nav>
-
+    <nav class="sidebar-nav">
+        <a href="">
+            <img>
+        </a>
+        <a href="">
+            <img>
+        </a>
+        <a href="">
+            <img>
+        </a>
+        <a href="">
+            <img>
+        </a>
     </nav>
     <main>
-
+        <div class="main-header">
+            <h2 class="headline">Dashboard</h2>
+            <div class="tab"></div>
+        </div>
+        <div class="alert" id="alert">
+            <!-- JS will go here -->
+        </div>
+        <section class="traffic">
+            <div class="traffic-header">
+                <h3>Traffic</h3>
+                <ul class="traffic-nav">
+                    <li class="traffic-nav-link">Hourly</li>
+                    <li class="traffic-nav-link">Daily</li>
+                    <li class="traffic-nav-link active">Weekly</li>
+                    <li class="traffic-nav-link">Monthly</li>
+                </ul>
+            </div>
+            <div class="widget-container-full">
+                <!-- graph will attach here -->
+                <canvas id="traffic-chart"></canvas>
+            </div>
+        </section>
+        <section class="daily">
+            <h3>Daily Traffic</h3>
+            <div class="widget-container-half">
+                <canvas id="daily-chart"></canvas>
+            </div>
+        </section>
+        <section>
+            <h3>Mobile Users</h3>
+            <div class="widget-container-half">
+                <canvas id="mobile-chart"></canvas>
+            </div>
+        </section>
     </main>
     <script type="text/javascript" src="app.js"></script>
 </body>
