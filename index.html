@@ -7,6 +7,7 @@
     <title>Web App Dashboard</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/toggle-switch.css">
 </head>
 <body>
     <header>
@@ -18,6 +19,7 @@
             <img src="" alt="">
         <h3>Steve Martin</h3>
     </header>
+
     <nav class="sidebar-nav">
         <a href="">
             <img>
@@ -32,6 +34,7 @@
             <img>
         </a>
     </nav>
+
     <main>
         <div class="main-header">
             <h2 class="headline">Dashboard</h2>
@@ -40,6 +43,7 @@
         <div class="alert" id="alert">
             <!-- JS will go here -->
         </div>
+
         <section class="traffic">
             <div class="traffic-header">
                 <h3>Traffic</h3>
@@ -55,16 +59,172 @@
                 <canvas id="traffic-chart"></canvas>
             </div>
         </section>
+
         <section class="daily">
             <h3>Daily Traffic</h3>
             <div class="widget-container-half">
                 <canvas id="daily-chart"></canvas>
             </div>
         </section>
+
         <section>
             <h3>Mobile Users</h3>
             <div class="widget-container-half">
                 <canvas id="mobile-chart"></canvas>
+            </div>
+        </section>
+
+        <div>
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- inline SVG -->
+                </div>
+                <div class="social-text">
+                    <p>Facebook</p>
+                    <p>112,147</p>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- inline SVG -->
+                </div>
+                <div class="social-text">
+                    <p>Instagram</p>
+                    <p>31,204</p>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="social-image">
+                    <!-- inline SVG -->
+                </div>
+                <div class="social-text">
+                    <p>Twitter</p>
+                    <p>58,431</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="members">
+            <h3>New Members</h3>
+            <div class="members-container">
+                <img src="images/member-1.jpg" class="profile-image">
+                <div class="members-text">
+                    <p>Victoria Chambers</p>
+                    <a href="#">victoria.chambers80@example.com</a>
+                </div>
+                <p>10/15/20</p>
+            </div>
+            <div class="members-container">
+                <img src="images/member-2.jpg" class="profile-image">
+                <div class="members-text">
+                    <p>Dale Byrd</p>
+                    <a href="#">dale.byrd52@example.com</a>
+                </div>
+                <p>10/15/20</p>
+            </div>
+            <div class="members-container">
+                <img src="images/member-3.jpg" class="profile-image">
+                <div class="members-text">
+                    <p>Dawn Wood</p>
+                    <a href="#">dawn.wood16@example.com</a>
+                </div>
+                <p>10/15/20</p>
+            </div>
+            <div class="members-container">
+                <img src="images/member-4.jpg" class="profile-image">
+                <div class="members-text">
+                    <p>Dan Oliver</p>
+                    <a href="#">dan.oliver82@example.com</a>
+                </div>
+                <p>10/15/20</p>
+            </div>
+        </section>
+        
+        <section class="activity">
+            <h3>Recent Activity</h3>
+            <div class="activity-container">
+                <img src="images/member-1.jpg" class="profile-image">
+                <div class="members-text">
+                    <p>Victoria Chambers commented on WebApp's SEO Tips</p>
+                    <p>4 hours ago</p>
+                </div>
+                <p>></p>
+            </div>
+            <div class="activity-container">
+                <img src="images/member-2.jpg" class="profile-image">
+                <div class="members-text">
+                    <p>Dale Byrd liked the post Facebook's Changes for 2021</p>
+                    <p>5 hours ago</p>
+                </div>
+                <p>></p>
+            </div>
+            <div class="activity-container">
+                <img src="images/member-3.jpg" class="profile-image">
+                <div class="members-text">
+                    <p>Dawn Wood commented on Facebook's Changes for 2021</p>
+                    <p>5 hours ago</p>
+                </div>
+                <p>></p>
+            </div>
+            <div class="activity-container">
+                <img src="images/member-4.jpg" class="profile-image">
+                <div class="members-text">
+                    <p>Dan Oliver posted WebApp's SEO Tips</p>
+                    <p>1 day ago</p>
+                </div>
+                <p>></p>
+            </div>
+        </section>
+
+        <section class="message">
+            <h3>Message User</h3>
+            <form class="widget-container">
+                <input type="text" placeholder="Search for user" class="form-field" id="userField">
+                <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+                <button class="button-primary" id="send">Send</button>
+            </form>
+        </section>
+
+        <section class="settings">
+            <h3>Settings</h3>
+            <fieldset>
+                <legend></legend>
+                <p>Send Email Notifications</p>
+                <div class="switch-toggle switch-candy">
+                    <input id="week" name="view" type="radio" checked>
+                    <label for="week" onclick="">ON</label>
+                
+                    <input id="month" name="view" type="radio">
+                    <label for="month" onclick="">OFF</label>
+
+                    <a></a>
+                </div>
+
+                <legend></legend>
+                <p>Set Profile to Public</p>
+                <div class="switch-toggle switch-candy">
+                    <input id="week" name="view" type="radio" checked>
+                    <label for="week" onclick="">ON</label>
+                
+                    <input id="month" name="view" type="radio">
+                    <label for="month" onclick="">OFF</label>
+
+                    <a></a>
+                </div>
+              </fieldset>
+             
+            <select class="form-field" id="timezone">
+                <option>Select a Timezone</option>
+                <option>Hawaii</option>
+                <option>Alaska</option>
+                <option>Pacific</option>
+                <option>Mountain</option>
+                <option>Central</option>
+                <option>Eastern</option>
+            </select>
+            <div class="settings-button">
+                <button class="button-primary" id="save">Save</button>
+                <button class="button-disabled" id="cancel">Cancel</button>
             </div>
         </section>
     </main>
