@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "web-app-dashboard",
+			"path": "."
+		},
+		{
+			"name": "mockups",
+			"path": "../../../Downloads/web_app_dashboard_v3.2/mockups"
+		}
+	],
+	"settings": {}
+}
