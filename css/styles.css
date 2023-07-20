@@ -20,12 +20,29 @@ body {
         "main";
 }
 
-/* Media Queries */
-@media screen and (min-width: 768px) {
+.header {
+    grid-area: header;
+}
 
+.navigation {
+    grid-area: navigation;
+}
+
+.main {
+    grid-area: main;
 }
 
 /* Media Queries */
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 55px 1fr;
+        grid-template-areas:
+            "header header"
+            "navigation main";
+    }
+}
+
 @media screen and (min-width: 1024px) {
     
 }
